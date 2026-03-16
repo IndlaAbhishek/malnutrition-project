@@ -1,0 +1,7 @@
+{
+    "type": "soft_voting",
+    "weights": [
+        0.4,
+        0.6
+    ]
+}
