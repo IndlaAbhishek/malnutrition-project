@@ -65,6 +65,6 @@ Backend API is deployed using Render.
 ---
 
 ## Authors
-Indla Abhishek
-Final Year Project
-B.Tech Computer Science & Engineering
+#Indla Abhishek
+#Final Year Project
+#B.Tech Computer Science & Engineering
