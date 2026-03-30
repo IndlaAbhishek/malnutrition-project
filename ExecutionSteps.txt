@@ -1,0 +1,197 @@
+================================================================================
+ML-BASED CLASSIFIER FOR IDENTIFYING MALNUTRITION RISK USING BASIC HEALTH METRICS
+CAPSTONE PROJECT - COMPLETE EXECUTION STEPS
+================================================================================
+
+PROJECT OVERVIEW:
+- Title: ML-Based Classifier for Identifying Malnutrition Risk from Basic Health Metrics
+- Technology: Hybrid Model (XGBoost + Artificial Neural Network)
+- Dataset: DHS-based Child Health Dataset (Normal, Low, Medium, High Risk Classes)
+- Framework: TensorFlow, Scikit-learn, XGBoost, Pandas, NumPy
+- Implementation Platform: Jupyter Notebook / Google Colab, Android Application (Kotlin)
+
+
+STEP 1: PROJECT SETUP AND ENVIRONMENT
+
+
+1. Import required libraries such as pandas and numpy for data processing, and matplotlib and seaborn for visualization.
+2. Import machine learning libraries including scikit-learn for preprocessing, model training, and evaluation.
+3. Import XGBoost for gradient boosting model implementation.
+4. Import TensorFlow/Keras for building the Artificial Neural Network model.
+5. Set up the working environment in Jupyter Notebook or Google Colab.
+
+
+STEP 2: DATASET PREPARATION
+
+
+1. Load the dataset from the CSV file using pandas.
+2. The dataset contains child health and socio-economic features such as age, weight, height, hemoglobin levels, and Z-scores.
+3. Define the target variable as malnutrition risk levels: Normal, Low, Medium, and High.
+4. Verify the dataset structure and ensure proper loading of all features.
+
+
+STEP 3: DATA PREPROCESSING
+
+
+1. Check for missing values and duplicate records in the dataset.
+2. Clean the dataset to ensure consistency and correctness.
+3. Convert categorical features into numerical format using encoding techniques.
+4. Ensure all input features are in a suitable format for model training.
+
+
+STEP 4: DATA EXPLORATION AND ANALYSIS
+
+
+1. Visualize categorical features such as gender, education level, and risk categories using bar charts.
+2. Analyze numerical features such as Z-scores using histograms.
+3. Compute statistical summaries including mean, minimum, and maximum values.
+4. Identify patterns and distributions in the dataset.
+
+
+STEP 5: DATA PREPARATION FOR MODEL
+
+
+1. Handle class imbalance using downsampling to ensure equal representation of all risk categories.
+2. Select relevant features such as age, weight, height, hemoglobin, and socio-economic indicators.
+3. Split the dataset into training and testing sets (80% training and 20% testing).
+4. Apply feature scaling to normalize numerical values.
+
+
+STEP 6: MODEL DEVELOPMENT
+
+
+1. Build an Artificial Neural Network (ANN) using TensorFlow/Keras to capture complex patterns in the data.
+2. Train the ANN model using the training dataset and evaluate its performance.
+3. Implement the XGBoost model for efficient classification of structured data.
+4. Train the XGBoost model and compare its performance with the ANN model.
+
+
+STEP 7: MODEL EVALUATION
+
+
+1. Evaluate model performance using metrics such as accuracy, confusion matrix, precision, and recall.
+2. Compare results of ANN and XGBoost models.
+3. Identify the best-performing model based on evaluation metrics.
+
+
+STEP 8: HYBRID MODEL IMPLEMENTATION
+
+
+1. Combine predictions from ANN and XGBoost models using a soft voting mechanism.
+2. Assign weights to models (XGBoost: 60%, ANN: 40%) for final prediction.
+3. Generate final predictions based on combined model outputs.
+4. Improve overall accuracy and reliability using the hybrid approach.
+
+
+STEP 9: MODEL OPTIMIZATION
+
+
+1. Calibrate ANN probability outputs to improve prediction confidence.
+2. Fine-tune model parameters for better performance.
+3. Ensure stable and reliable predictions for real-world usage.
+
+
+STEP 10: RESULT ANALYSIS AND VISUALIZATION
+
+
+1. Plot model performance metrics using visualization tools.
+2. Display confusion matrices and accuracy comparisons.
+3. Analyze prediction trends and performance improvements.
+
+
+STEP 11: MODEL SAVING AND DEPLOYMENT PREPARATION
+
+
+1. Save trained models including ANN and XGBoost for reuse.
+2. Save preprocessing components such as scalers and encoders.
+3. Store model configuration files for hybrid prediction logic.
+4. Prepare the system for integration into backend services.
+
+
+STEP 12: BACKEND IMPLEMENTATION
+
+
+1. Develop backend using FastAPI or Flask for serving predictions.
+2. Load saved models and preprocessing components in the backend.
+3. Create API endpoint (/predict) to accept user input data.
+4. Process input data, apply preprocessing, and generate predictions.
+5. Return malnutrition risk level (Normal, Low, Medium, High) along with confidence score.
+
+
+STEP 13: FRONTEND IMPLEMENTATION
+
+
+1. Develop Android application using Kotlin in Android Studio.
+2. Design user interface with input fields for health metrics such as age, weight, height, and hemoglobin etc...
+3. Integrate frontend with backend API for real-time prediction.
+4. Display prediction results including risk level and confidence score.
+
+
+STEP 14: SYSTEM WORKFLOW
+
+
+1. User enters health details in the mobile application.
+2. Input data is sent to the backend API.
+3. Backend preprocesses the data and applies the hybrid model.
+4. Model predicts malnutrition risk level.
+5. Prediction result is sent back to the frontend.
+6. Output is displayed to the user in the application.
+
+
+STEP 15: RESULT STORAGE
+
+
+1. Store trained models and configurations in backend files.
+2. Maintain logs and prediction outputs if required.
+3. Save application results for further analysis and improvements.
+
+
+================================================================================
+PROJECT STATISTICS
+================================================================================
+
+
+Model Metrics:
+- Models used: Artificial Neural Network + XGBoost
+- Hybrid approach: Soft Voting
+- Final accuracy: 99.75%
+- Training approach: Supervised Learning
+
+Dataset Statistics:
+- Dataset type: Child health and socio-economic data
+- Total records: 200,602
+- Classes: 4 (Normal, Low, Medium, High)
+- Features: Anthropometric and socio-economic indicators
+
+
+================================================================================
+CONCLUSION
+================================================================================
+
+
+This capstone project successfully implements a hybrid machine learning system for 
+malnutrition risk prediction using basic health metrics. The system integrates:
+
+1. Artificial Neural Network for deep pattern recognition
+2. XGBoost for efficient structured data classification
+3. Hybrid model combining both approaches for improved accuracy
+4. Real-time prediction through backend API integration
+5. User-friendly Android application for easy data input and result display
+
+The system achieves high accuracy and reliability, making it suitable for deployment 
+in healthcare systems, especially in rural and resource-limited environments.
+
+
+================================================================================
+FINAL OUTPUT
+================================================================================
+
+
+The proposed system predicts malnutrition risk levels (Normal, Low, Medium, High) 
+based on basic health metrics and provides real-time results through a mobile 
+application, enabling early detection and intervention.
+
+
+================================================================================
+END OF DOCUMENT
+================================================================================
